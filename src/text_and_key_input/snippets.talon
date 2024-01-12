@@ -1,0 +1,29 @@
+curly:
+  "{}"
+  key("left")
+square:
+  "[]"
+  key("left")
+round:
+  "()"
+  key("left")
+diamond:
+  "<>"
+  key("left")
+quad:
+  "\"\""
+  key("left")
+twin:
+  "''"
+  key("left")
+ski:
+  "``"
+  "left"
+mox:
+  "\"\": \"\","
+  key("left")
+  key("left")
+  key("left")
+  key("left")
+  key("left")
+  key("left")
