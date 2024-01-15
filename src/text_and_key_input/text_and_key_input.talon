@@ -10,10 +10,17 @@ word <word>:
 
 # ===== Key Input =====
 <user.alphabet>: "{alphabet}"
-<user.symbol_keys>: "{symbol_keys`}"
+<user.shifted_symbols>: "{shifted_symbols}"
+<user.unshifted_symbols>: "{unshifted_symbols}"
 <user.system_keys>: key(system_keys)
 <user.file_extentions>: "{file_extentions}"
 short <user.abbreviations>: "{abbreviations}"
+
+
+go up: key(up)
+go down: key(down)
+go left: key(left)
+go right: key(right)
 
 # ===== Modifires =====
 

@@ -7,6 +7,7 @@ ctx.lists["self.abbreviations"] = {
   "email": "malachithomas110@gmail.com",
   "number": "num",
   'numbers': 'nums',
+  "sauce": "src",
 }
 
 @mod.capture(rule="{self.abbreviations}")

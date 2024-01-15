@@ -113,12 +113,12 @@ ctx.lists["self.system_keys"] = {
 }
 
 ctx.lists["self.modifies"] = {
-  "com": "cmd",
+  "command": "cmd",
   "controll": "ctrl",
   "shift": "shift",
   "option": "alt",
   "cord": "cmd-shift",
-  "troll": "ctrl-shift",
+  # "troll": "ctrl-shift",
 }
 
 @mod.capture(rule="{self.alphabet}")
@@ -126,6 +126,9 @@ def alphabet(m) -> str: return str(m).replace(" ", "")
 
 @mod.capture(rule="{self.number_keys}")
 def number_key(m) -> str: return str(m)
+
+@mod.capture(rule="{user.shifted_symbols}")
+def shifted_symbols(m) -> str: return str(m)
 
 @mod.capture(rule="{user.unshifted_symbols}")
 def unshifted_symbols(m) -> str: return str(m)

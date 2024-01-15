@@ -38,7 +38,7 @@ no_space_after = re.compile(
 no_space_before = re.compile(
     r"""
   ^(?:
-    [\s\-_.,!?/%)\]}’”]   # characters that never need space before them
+    [\s\-_.,(!?/%)\]}’”]   # characters that never need space before them
   | [$£€¥₩₽₹](?!\w)        # currency symbols not followed by a word character
   | [;:](?!-\)|-\()        # colon or semicolon except for smiley faces
   # quotes followed by end of string, space, closing braces, dash, other quotes, or some punctuation.

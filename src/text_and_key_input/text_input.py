@@ -1,5 +1,5 @@
 from talon import Context, Module, actions
-from ...format_phrase import format_phrase
+from ...comunity.format_phrase import format_phrase
 mod, ctx = Module(), Context()
 mod.list("text_replacements")
 mod.list("phrase_punctuation")
@@ -11,7 +11,9 @@ ctx.lists["self.text_replacements"] = {
   "fis buzz": "fizzbuzz",
   "fis": "fizz",
   "tmux": "tmux",
+  "t mux": "tmux",
   "foo": "foo",
+  "un": "un",
 }
 
 ctx.lists["self.phrase_punctuation"] = {

@@ -2,29 +2,20 @@ app: Alacritty
 app: Iterm2
 -
 
-# <user.terminal_commands>: insert(terminal_commands)
-# <user.tmux_shortcuts>: key(tmux_shortcuts)
+list all:
+  "la"
+  key("enter")
 
-# list all:
-#   insert("la")
-#   key("enter")
+change directory: "cd "
 
-# change back:
-#   insert("cd ../")
-#   key("enter")
 
-# toggle me:
-#   insert("cd -")
-#   key("enter")
+# ===== Tmux Shortcuts =====
+window reload: key("ctrl-r")
+new window: key("ctrl-n")
+next window: key("ctrl-b")
+close window: key("ctrl-w")
+split up: key("alt-up")
+split down: key("alt-down")
+split left: key("alt-left")
+split right: key("alt-right")
 
-# move to:
-#   insert("cd ")
-
-# copy this: insert("cp ")
-# move this: "mv "
-# link this: "ln"
-# link force:"ln -f"
-# tab key: key(tab)
-# cancel this: key(ctrl-c)
-
-# # ===== Tmux Shortcuts =====
