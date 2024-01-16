@@ -9,7 +9,8 @@ ctx.lists["user.website_names"] = {
   "youtube": "youtube.com",
   "github": "github.com",
   "rust crates": "crates.io",
-  "cursor": "cursorless.org/docs/"
+  "cursor": "cursorless.org/docs/",
+  "figma": "https://www.figma.com",
 }
 
 @mod.capture(rule="{self.website_names}")

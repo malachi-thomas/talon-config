@@ -1,4 +1,4 @@
-app: google chrome
+app: safari
 -
 
 bar:
@@ -22,7 +22,7 @@ tab new : key("cmd-t")
 tab close: key("cmd-w")
 show history: key(cmd-y)
 open private: key(cmd-shift-n)
-open bookmarks: key(alt-cmd-b)
-go backwards: key(cmd-left)
-go forwards: key(cmd-right)
+# open bookmarks: key(alt-cmd-b)
+move back: key(cmd-left)
+move next: key(cmd-right)
 (make | add) bookmark: key(cmd-d)

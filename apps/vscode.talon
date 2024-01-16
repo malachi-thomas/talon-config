@@ -44,3 +44,8 @@ definition: user.vscode("editor.action.revealDefinition")
 show files: user.vscode("workbench.action.quickOpen")
 show command: user.vscode("workbench.action.showCommands")
 open recent: user.vscode("workbench.action.openRecent")
+
+# manipulation
+select line:
+  key(end)
+  key(shift-home)

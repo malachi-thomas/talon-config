@@ -14,6 +14,11 @@ ctx.lists["self.text_replacements"] = {
   "t mux": "tmux",
   "foo": "foo",
   "un": "un",
+  "to do": "todo",
+  "n p": "npm",
+  "in it": "init",
+  "node": "node",
+  "h t m l": "html",
 }
 
 ctx.lists["self.phrase_punctuation"] = {

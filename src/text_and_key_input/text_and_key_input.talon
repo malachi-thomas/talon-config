@@ -1,12 +1,12 @@
 # ===== Phrase Input =====
 
-say <user.text>:
+phrase <user.text>:
   user.add_phrase_to_history(text)
   "{text}"
 
 word <word>:
-  user.add_phrase_to_history(text)
-  "{text}"
+  user.add_phrase_to_history(word)
+  "{word}"
 
 # ===== Key Input =====
 <user.alphabet>: "{alphabet}"
@@ -15,12 +15,7 @@ word <word>:
 <user.system_keys>: key(system_keys)
 <user.file_extentions>: "{file_extentions}"
 short <user.abbreviations>: "{abbreviations}"
-
-
-go up: key(up)
-go down: key(down)
-go left: key(left)
-go right: key(right)
+go <user.movement_keys>: key(movement_keys)
 
 # ===== Modifires =====
 
@@ -29,6 +24,6 @@ go right: key(right)
 # ===== Text Manipulation =====
 
 go back: user.clear_last_phrase()
-go select: select_last_phrase()
-go before: before_last_phrase()
+go select: user.select_last_phrase()
+go before: user.before_last_phrase()
 

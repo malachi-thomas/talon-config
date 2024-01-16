@@ -7,6 +7,7 @@ list all:
   key("enter")
 
 change directory: "cd "
+remove all: "rma "
 
 
 # ===== Tmux Shortcuts =====
