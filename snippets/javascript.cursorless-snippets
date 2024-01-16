@@ -1,0 +1,68 @@
+{
+  "print": {
+    "definitions": [{
+      "scope": {"langIds": ["javascript"]},
+      "body": [
+        "console.log($0)"
+      ]}],
+    "description": ""
+  },
+
+  "funk": {
+    "definitions": [{
+      "scope": {"langIds": ["javascript"]},
+      "body": [
+        "const $1 = ($2) => {",
+        "\t$0",
+        "}"
+      ]}],
+    "description": ""
+  },
+
+  "const": {
+    "definitions": [{
+      "scope": {"langIds": ["javascript"]},
+      "body": [
+        "const $1 = $0"
+      ]}],
+    "description": ""
+  },
+
+  "let": {
+    "definitions": [{
+      "scope": {"langIds": ["javascript"]},
+      "body": [
+        "let $1 = $0"
+      ]}],
+    "description": ""
+  },
+
+  "if": {
+    "definitions": [{
+      "scope": {"langIds": ["javascript"]},
+      "body": [
+        "if ($1) {",
+        "\t$0",
+        "}"
+      ]}],
+    "description": ""
+  },
+
+  "shortIf": {
+    "definitions": [{
+      "scope": {"langIds": ["javascript"]},
+      "body": [
+        "if ($1) $0"
+      ]}],
+    "description": ""
+  },
+
+  "turn": {
+    "definitions": [{
+      "scope": {"langIds": ["javascript"]},
+      "body": [
+        "$condition1 ? $exprIfTrue2 : $exprIfFalse0"
+      ]}],
+    "description": ""
+  }
+}

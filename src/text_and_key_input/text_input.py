@@ -19,6 +19,7 @@ ctx.lists["self.text_replacements"] = {
   "in it": "init",
   "node": "node",
   "h t m l": "html",
+  "c s s": "css",
 }
 
 ctx.lists["self.phrase_punctuation"] = {
@@ -37,4 +38,5 @@ ctx.lists["self.phrase_punctuation"] = {
     short {user.abbreviations} |
     <phrase>)+""")
 def text(m) -> str:
-  return format_phrase(m)
+  return format_phrase(m).lower()
+

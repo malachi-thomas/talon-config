@@ -1,13 +1,11 @@
 app: code
 -
 
-# user.vscode("")
-
 # Cursor`
 cursor next: key(ctrl-n)
 cursor last: key(ctrl-p)
-cursor up: user.vscode("editor.action.insertCursorAbove")
-cursor down: user.vscode("editor.action.insertCursorBelow")
+cursor up: key(alt-up)
+cursor down: key(alt-down)
 
 # Terminal
 terminal: key(ctrl-t)
@@ -29,7 +27,7 @@ split right: user.vscode("workbench.action.splitEditorUp")
 
 line up: user.vscode("editor.action.moveLinesUpAction")
 line down: user.vscode("editor.action.moveLinesDownAction")
-replace: user.vscode("editor.action.startFindReplaceAction")
+# replace: user.vscode("editor.action.startFindReplaceAction")
 
 # Open Settings
 open (setting | settings): user.vscode("workbench.action.openGlobalSettings")
@@ -44,6 +42,8 @@ definition: user.vscode("editor.action.revealDefinition")
 show files: user.vscode("workbench.action.quickOpen")
 show command: user.vscode("workbench.action.showCommands")
 open recent: user.vscode("workbench.action.openRecent")
+go next: user.vscode("jumpToNextSnippetPlaceholder")
+go last: user.vscode("jumpToPrevSnippetPlaceholder")
 
 # manipulation
 select line:

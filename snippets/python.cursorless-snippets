@@ -1,0 +1,10 @@
+{
+  "print": {
+    "definitions": [{
+      "scope": {"langIds": ["python"]},
+      "body": [
+        "print($0)"
+      ]}],
+    "description": ""
+  }
+}

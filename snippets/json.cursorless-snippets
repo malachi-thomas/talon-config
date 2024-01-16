@@ -1,0 +1,19 @@
+{
+  "snip": {
+    "definitions": [{
+      "scope": {"langIds": ["json"]},
+      "body": [
+        "\"$1\": {",
+        "\t\"definitions\": [{",
+        "\t\t\"scope\": {\"langIds\": [\"$2\"]},",
+        "\t\t\"body\": [",
+        "\t\t\t$0",
+        "\t\t]",
+        "\t}]",
+        "\t\"description\": \"\"",
+        "}"
+      ]}],
+    "description": ""
+  }
+}
+
